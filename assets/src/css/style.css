@@ -1,0 +1,637 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+div.wrapper {
+  width: 100%;
+  max-width: 1110px;
+  display: block;
+  margin: 0 auto; }
+
+header, main, footer {
+  float: left;
+  width: 100%; }
+
+header {
+  height: 100px; }
+  header span.logo {
+    background-image: url("../images/logo-leader.png");
+    width: 125px;
+    height: 62px;
+    display: block;
+    float: left;
+    margin-top: 15px; }
+  header nav.menu {
+    float: right;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 40px; }
+    header nav.menu i {
+      display: none; }
+    header nav.menu ul {
+      width: 463px;
+      display: flex;
+      justify-content: space-between; }
+    header nav.menu li {
+      float: left; }
+    header nav.menu a {
+      color: #000000; }
+
+.bannerTop {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 120px; }
+  .bannerTop img {
+    width: 100%;
+    height: auto; }
+  .bannerTop div.wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    margin: auto; }
+  .bannerTop span.mao {
+    background-image: url("../images/mao-cartao.png");
+    width: 658px;
+    height: 519px;
+    display: block; }
+  .bannerTop .info {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    width: 350px;
+    text-align: center; }
+    .bannerTop .info p {
+      font-size: 18px; }
+      .bannerTop .info p strong {
+        display: block;
+        color: #fff;
+        margin-top: 20px;
+        margin-bottom: 30px; }
+    .bannerTop .info .bt {
+      width: 160px;
+      height: 40px;
+      border: 2px solid #fff;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+      line-height: 38px;
+      border-radius: 40px;
+      display: inline-block; }
+    .bannerTop .info strong {
+      font-size: 18px;
+      font-weight: 600; }
+    .bannerTop .info strong.destaque {
+      display: block;
+      color: #fff;
+      margin-top: 42px;
+      margin-bottom: 15px; }
+    .bannerTop .info a.monteaSua {
+      width: 350px;
+      height: 40px;
+      background-color: #ed1c24;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      display: block;
+      border-radius: 40px;
+      line-height: 39px; }
+
+section.comoFunfa {
+  float: left;
+  width: 100%;
+  margin-bottom: 120px; }
+  section.comoFunfa .img {
+    float: left;
+    margin-left: -50px;
+    margin-right: 70px; }
+  section.comoFunfa .explica {
+    float: left;
+    width: 440px; }
+  section.comoFunfa h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #ed1c24;
+    text-transform: uppercase;
+    float: left;
+    word-wrap: break-word;
+    width: 270px;
+    line-height: 40px;
+    margin-bottom: 20px; }
+  section.comoFunfa p {
+    display: block;
+    float: left;
+    font-size: 15px;
+    line-height: 16.5px;
+    margin-bottom: 30px; }
+  section.comoFunfa a {
+    width: 256px;
+    height: 40px;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #ed1c24;
+    border: 2px solid #ed1c24;
+    float: left;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 40px; }
+
+section.maisInfo {
+  float: left;
+  width: 100%;
+  background-color: #7f1e1a;
+  position: relative;
+  padding: 65px 0 70px 0; }
+  section.maisInfo div.wrapper {
+    display: flex;
+    justify-content: center; }
+  section.maisInfo span.maisLogo {
+    background-image: url("../images/img-mais-info.png");
+    width: 288px;
+    height: 263px;
+    display: block;
+    margin-right: 30px; }
+  section.maisInfo p {
+    color: #fff;
+    width: 315px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 80px; }
+    section.maisInfo p a {
+      width: 160px;
+      height: 40px;
+      border: 2px solid #fff;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #fff;
+      line-height: 38px;
+      border-radius: 40px;
+      display: inline-block;
+      margin-top: 20px; }
+
+footer {
+  background-color: #e1e1e1;
+  color: rgba(0, 0, 0, 0.6);
+  height: 75px; }
+  footer a {
+    color: rgba(0, 0, 0, 0.6); }
+  footer nav.menu {
+    float: left;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 35px; }
+    footer nav.menu ul {
+      width: 463px;
+      display: flex;
+      justify-content: space-between; }
+    footer nav.menu li {
+      float: left; }
+    footer nav.menu a {
+      color: rgba(0, 0, 0, 0.6); }
+  footer .social {
+    float: right;
+    margin-top: 20px; }
+    footer .social span {
+      float: left;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 11px;
+      margin-right: 40px; }
+    footer .social ul {
+      float: left; }
+    footer .social li {
+      float: left; }
+      footer .social li:not(:last-child) {
+        margin-right: 25px; }
+    footer .social a {
+      font-size: 34px; }
+
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  header {
+    height: 75px; }
+    header span.logo {
+      background-size: 100% auto;
+      width: 83px;
+      height: 41px;
+      float: none;
+      margin: 15px auto 0 auto; }
+    header nav.menu {
+      position: relative; }
+      header nav.menu i {
+        display: block; }
+      header nav.menu .fa-bars {
+        position: absolute;
+        right: 20px;
+        top: -75px;
+        font-size: 30px; }
+      header nav.menu a {
+        font-size: 24px; }
+      header nav.menu ul {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        background-color: #fff;
+        height: 100%;
+        top: 0;
+        padding-top: 90px;
+        display: block;
+        right: -100%;
+        -moz-transition: all 0.25s ease-in-out 0s;
+        -o-transition: all 0.25s ease-in-out 0s;
+        -webkit-transition: all 0.25s ease-in-out 0s;
+        transition: all 0.25s ease-in-out 0s; }
+        header nav.menu ul::after {
+          content: "\f057";
+          font-family: Font Awesome\ 5 Free;
+          font-size: 28px;
+          position: absolute;
+          top: 20px;
+          right: 15%;
+          display: block;
+          z-index: 10;
+          cursor: pointer; }
+      header nav.menu li {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 20px; }
+      header nav.menu.abre ul {
+        right: -10%; }
+  .bannerTop {
+    min-height: 450px;
+    background-image: url("../images/fundo-banner.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-bottom: 0; }
+    .bannerTop div.wrapper {
+      position: static; }
+    .bannerTop .info {
+      width: 100%;
+      padding: 60px 10px 0 10px;
+      float: left; }
+      .bannerTop .info .bt {
+        width: 250px;
+        margin-bottom: 15px; }
+      .bannerTop .info strong.destaque {
+        margin-top: 15px; }
+      .bannerTop .info a.monteaSua {
+        width: 250px;
+        margin: 0 auto; }
+    .bannerTop img {
+      display: none; }
+    .bannerTop span.mao {
+      display: none; }
+  section.comoFunfa {
+    margin-bottom: 35px; }
+    section.comoFunfa .img {
+      width: 100%;
+      margin: 0; }
+    section.comoFunfa .explica {
+      width: 100%;
+      padding: 0 15px; }
+    section.comoFunfa h2 {
+      margin-bottom: 35px; }
+  section.maisInfo div.wrapper {
+    display: block; }
+  section.maisInfo span.maisLogo {
+    margin: 0 auto;
+    width: 200px;
+    height: 182px;
+    background-size: 100% auto; }
+  section.maisInfo p {
+    width: 100%;
+    float: left;
+    margin: 30px 0 0 0;
+    padding: 0 60px; }
+    section.maisInfo p a {
+      display: block;
+      margin: 20px auto 0 auto; }
+  footer {
+    height: auto; }
+    footer nav.menu {
+      width: 100%; }
+      footer nav.menu ul {
+        width: 100%;
+        display: block; }
+      footer nav.menu li {
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px; }
+    footer .social {
+      width: 100%; }
+      footer .social span {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 30px; }
+      footer .social ul {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px; }
+      footer .social li {
+        float: none;
+        display: inline-block; } }
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  header {
+    height: 75px; }
+    header span.logo {
+      background-size: 100% auto;
+      width: 83px;
+      height: 41px;
+      float: none;
+      margin: 15px auto 0 auto; }
+    header nav.menu {
+      position: relative; }
+      header nav.menu i {
+        display: block; }
+      header nav.menu .fa-bars {
+        position: absolute;
+        right: 20px;
+        top: -75px;
+        font-size: 30px; }
+      header nav.menu a {
+        font-size: 24px; }
+      header nav.menu ul {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        background-color: #fff;
+        height: 100%;
+        top: 0;
+        padding-top: 90px;
+        display: block;
+        right: -100%;
+        -moz-transition: all 0.25s ease-in-out 0s;
+        -o-transition: all 0.25s ease-in-out 0s;
+        -webkit-transition: all 0.25s ease-in-out 0s;
+        transition: all 0.25s ease-in-out 0s; }
+        header nav.menu ul::after {
+          content: "\f057";
+          font-family: Font Awesome\ 5 Free;
+          font-size: 28px;
+          position: absolute;
+          top: 20px;
+          right: 15%;
+          display: block;
+          z-index: 10;
+          cursor: pointer; }
+      header nav.menu li {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 20px; }
+      header nav.menu.abre ul {
+        right: -10%; }
+  .bannerTop {
+    min-height: 450px;
+    background-image: url("../images/fundo-banner.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-bottom: 0; }
+    .bannerTop div.wrapper {
+      position: absolute;
+      bottom: 0px; }
+    .bannerTop .info {
+      width: 300px;
+      padding: 10px 10px 0 10px;
+      float: left;
+      top: -110px;
+      right: 60px; }
+      .bannerTop .info .bt {
+        width: 250px;
+        margin-bottom: 15px; }
+      .bannerTop .info strong.destaque {
+        margin-top: 15px; }
+      .bannerTop .info a.monteaSua {
+        width: 250px;
+        margin: 0 auto; }
+    .bannerTop img {
+      display: none; }
+    .bannerTop span.mao {
+      width: 400px;
+      height: 316px;
+      background-size: 100% auto; }
+  section.comoFunfa {
+    margin-bottom: 35px; }
+    section.comoFunfa .img {
+      width: 100%;
+      margin: 0; }
+      section.comoFunfa .img img {
+        width: 100%;
+        height: auto; }
+    section.comoFunfa .explica {
+      width: 100%;
+      padding: 0 15px; }
+    section.comoFunfa h2 {
+      margin-bottom: 35px; }
+  section.maisInfo div.wrapper {
+    display: block; }
+  section.maisInfo span.maisLogo {
+    margin: 0 auto;
+    width: 200px;
+    height: 182px;
+    background-size: 100% auto; }
+  section.maisInfo p {
+    width: 100%;
+    float: left;
+    margin: 30px 0 0 0;
+    padding: 0 60px; }
+  footer {
+    height: auto; }
+    footer nav.menu {
+      width: 100%; }
+      footer nav.menu ul {
+        width: 100%;
+        display: block; }
+      footer nav.menu li {
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px; }
+    footer .social {
+      width: 100%; }
+      footer .social span {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 30px; }
+      footer .social ul {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px; }
+      footer .social li {
+        float: none;
+        display: inline-block; } }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    height: 75px; }
+    header span.logo {
+      background-size: 100% auto;
+      width: 83px;
+      height: 41px;
+      float: none;
+      margin: 15px auto 0 auto; }
+    header nav.menu {
+      position: relative; }
+      header nav.menu i {
+        display: block; }
+      header nav.menu .fa-bars {
+        position: absolute;
+        right: 20px;
+        top: -75px;
+        font-size: 30px; }
+      header nav.menu a {
+        font-size: 24px; }
+      header nav.menu ul {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        background-color: #fff;
+        height: 100%;
+        top: 0;
+        padding-top: 90px;
+        display: block;
+        right: -100%;
+        -moz-transition: all 0.25s ease-in-out 0s;
+        -o-transition: all 0.25s ease-in-out 0s;
+        -webkit-transition: all 0.25s ease-in-out 0s;
+        transition: all 0.25s ease-in-out 0s; }
+        header nav.menu ul::after {
+          content: "\f057";
+          font-family: Font Awesome\ 5 Free;
+          font-size: 28px;
+          position: absolute;
+          top: 20px;
+          right: 15%;
+          display: block;
+          z-index: 10;
+          cursor: pointer; }
+      header nav.menu li {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 20px; }
+      header nav.menu.abre ul {
+        right: -10%; }
+  .bannerTop .info {
+    right: 140px; }
+  .bannerTop span.mao {
+    background-size: 100% auto;
+    width: 418px;
+    height: 329px;
+    margin-left: 100px; }
+  section.comoFunfa {
+    float: left;
+    width: 100%;
+    margin-bottom: 120px; }
+    section.comoFunfa .img {
+      float: left;
+      margin-left: -50px;
+      margin-right: 70px;
+      width: 50%; }
+    section.comoFunfa .explica {
+      float: left;
+      width: 440px; }
+    section.comoFunfa h2 {
+      font-size: 40px;
+      font-weight: 900;
+      color: #ed1c24;
+      text-transform: uppercase;
+      float: left;
+      word-wrap: break-word;
+      width: 270px;
+      line-height: 60px; }
+    section.comoFunfa p {
+      display: block;
+      float: left;
+      font-size: 15px;
+      line-height: 16.5px;
+      margin-bottom: 30px; }
+    section.comoFunfa a {
+      width: 256px;
+      height: 40px;
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #ed1c24;
+      border: 2px solid #ed1c24;
+      float: left;
+      text-align: center;
+      line-height: 35px;
+      border-radius: 40px; } }
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .bannerTop span.mao {
+    background-size: 100% auto;
+    width: 535px;
+    height: 421px; }
+  .bannerTop .info {
+    top: 75px; } }
